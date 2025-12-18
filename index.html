@@ -350,59 +350,103 @@
             max-width: 1200px;
             margin: 0 auto;
         }
+      /* About Section */
+.about {
+    background: #1a1a1a;
+    padding: 80px 0;
+}
 
-        /* About Section - FIXED: Removed duplicate */
-        .about {
-            background: #0a0f1a;
-            padding: 5rem 5%;
-        }
+.about-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
 
-        .about-content {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
+.about h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 3rem;
+    font-weight: 700;
+}
 
-        .about h2 {
-            text-align: center;
-            font-size: 2.8rem;
-            color: #00d9ff;
-            margin-bottom: 3rem;
-            font-weight: 900;
-            text-shadow: 0 0 20px rgba(0, 217, 255, 0.5);
-            text-transform: uppercase;
-            letter-spacing: 3px;
-        }
+.about p {
+    color: #d1d5db;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
 
-        .about p {
-            color: #8ec5d9;
-            font-size: 1.1rem;
-            line-height: 1.8;
-            margin-bottom: 1.5rem;
-        }
+.about p.intro {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #f3f4f6;
+}
 
-        .about p.intro {
-            font-size: 1.3rem;
-            font-weight: 600;
-            color: #00d9ff;
-        }
+.about p.emphasis {
+    font-weight: 600;
+    color: #f3f4f6;
+}
 
-        .about p.emphasis {
-            font-weight: 600;
-            color: #00d9ff;
-        }
+.about p.closing {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-top: 2rem;
+}
 
-        .about p.closing {
-            font-size: 1.25rem;
-            font-weight: 700;
-            color: #00d9ff;
-            margin-top: 2rem;
-            text-shadow: 0 0 15px rgba(0, 217, 255, 0.3);
-        }
+.about p.short {
+    margin-bottom: 1rem;
+}
 
-        .about p.short {
-            margin-bottom: 1rem;
-        }
+        /* About Section */
+.about {
+    background: #1a1a1a;
+    padding: 80px 0;
+}
+
+.about-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.about h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 3rem;
+    font-weight: 700;
+}
+
+.about p {
+    color: #d1d5db;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.about p.intro {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #f3f4f6;
+}
+
+.about p.emphasis {
+    font-weight: 600;
+    color: #f3f4f6;
+}
+
+.about p.closing {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-top: 2rem;
+}
+
+.about p.short {
+    margin-bottom: 1rem;
+}
 
         .service-card {
             background: rgba(15, 25, 40, 0.6);
@@ -478,62 +522,79 @@
             font-size: 1.2rem;
             text-shadow: 0 0 10px rgba(0, 217, 255, 0.5);
         }
-
-        .process {
-            background: #0d1420;
-        }
-
-        .process-steps {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .process-step {
-            background: rgba(15, 25, 40, 0.6);
-            padding: 2.5rem;
-            border-radius: 15px;
-            border: 1px solid rgba(0, 217, 255, 0.2);
-            text-align: center;
-            transition: all 0.3s;
-        }
-
-        .process-step:hover {
-            border-color: #00d9ff;
-            box-shadow: 0 10px 40px rgba(0, 217, 255, 0.3);
-        }
-
-        .step-number {
-            width: 60px;
-            height: 60px;
-            background: #00d9ff;
-            color: #0a0f1a;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 2rem;
-            font-weight: 900;
-            margin: 0 auto 1.5rem;
-            box-shadow: 0 0 20px rgba(0, 217, 255, 0.5);
-        }
-
-        .process-step h3 {
-            color: #00d9ff;
-            font-size: 1.4rem;
-            margin-bottom: 1rem;
-            text-transform: uppercase;
-        }
-
-        .process-step p {
-            color: #8ec5d9;
-            line-height: 1.6;
-        }
+<!-- About Section -->
+<section id="about" class="about">
+    <div class="about-content">
+        <h2>About Us</h2>
+        
+        <p class="intro">
+            Gotham Outreach Solutions wasn't built in daylight.
+        </p>
+        
+        <p>
+            It came together after years inside sales floors, CRM trenches, and contractor 
+            boardrooms, watching the same thing happen over and over. Solid companies doing 
+            real work were getting ignored, while louder, sloppier players kept landing 
+            conversations they didn't deserve. Not because they were better. Because they 
+            were noisier.
+        </p>
+        
+        <p class="short">
+            That never sat right.
+        </p>
+        
+        <p>
+            I've spent years in business development, outreach, and appointment setting for 
+            construction and commercial service companies. Long enough to recognize that most 
+            outreach fails for one simple reason: it treats decision-makers like targets 
+            instead of people. It kicks down the front door, shouts a pitch, and wonders why 
+            no one answers.
+        </p>
+        
+        <p class="emphasis">
+            Gotham was built to work differently.
+        </p>
+        
+        <p>
+            We operate more like the Batcave than a call center. Quiet research first. 
+            Intelligence before movement. Understanding the city before driving through it 
+            at speed. We learn who actually runs the operation, how decisions are made, and 
+            where conversations make sense. Then, and only then, do we engage.
+        </p>
+        
+        <p>
+            No scripts. No gimmicks. No fake urgency. No "quick question" emails that lead 
+            nowhere.
+        </p>
+        
+        <p>
+            Gotham Outreach functions as a founder-level partner, not a vendor. When there's 
+            a real fit, we approach it deliberately and professionally. When there isn't, we 
+            don't force it. We're not here to chase every signal in the sky. Only the ones 
+            worth answering.
+        </p>
+        
+        <p>
+            This company exists because too many outreach firms confuse motion with progress. 
+            Gotham prefers precision. Call it operating after hours, when the city's quieter 
+            and the noise dies down. The Batmobile's ready if needed, but most nights it's 
+            about planning the route, not flooring it.
+        </p>
+        
+        <p class="short">
+            No masks required. No cape mandatory.
+        </p>
+        
+        <p class="short">
+            Just preparation, intent, and conversations that actually move the needle.
+        </p>
+        
+        <p class="closing">
+            That's Gotham Outreach Solutions
+      </section>
 
         .who-we-serve {
-            background: #0a0f1a;
+            background: #0d1420;
         }
 
         .client-types {
@@ -603,7 +664,7 @@
         }
 
         .cta-section {
-            background: #0d1420;
+            background: #0a0f1a;
             color: #00d9ff;
             text-align: center;
             padding: 5rem 5%;
@@ -643,7 +704,7 @@
         }
 
         .contact {
-            background: #0a0f1a;
+            background: #0d1420;
         }
 
         .contact-content {
@@ -721,72 +782,6 @@
             resize: vertical;
         }
 
-        .book-call {
-            background: #0d1420;
-            padding: 4rem 5%;
-            text-align: center;
-        }
-
-        .book-call h2 {
-            color: #00d9ff;
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            text-transform: uppercase;
-        }
-
-        .book-call p {
-            color: #8ec5d9;
-            font-size: 1.1rem;
-            max-width: 700px;
-            margin: 0 auto 2rem;
-        }
-
-        .reviews-section {
-            background: #0a0f1a;
-            padding: 5rem 5%;
-        }
-
-        .reviews-slider {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .review-card {
-            background: rgba(15, 25, 40, 0.6);
-            padding: 2rem;
-            border-radius: 15px;
-            border: 1px solid rgba(0, 217, 255, 0.2);
-            transition: all 0.3s;
-        }
-
-        .review-card:hover {
-            border-color: #00d9ff;
-            box-shadow: 0 10px 40px rgba(0, 217, 255, 0.3);
-        }
-
-        .review-stars {
-            color: #00d9ff;
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-        }
-
-        .review-text {
-            color: #8ec5d9;
-            font-size: 1rem;
-            line-height: 1.6;
-            margin-bottom: 1rem;
-            font-style: italic;
-        }
-
-        .review-name {
-            color: #6ba5b8;
-            font-size: 0.9rem;
-            font-weight: 600;
-        }
-
         footer {
             background: #0a0f1a;
             color: #6ba5b8;
@@ -837,7 +832,7 @@
             <li><a href="#home">Home</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#process">Process</a></li>
+          <li><a href="#process">Process</a></li>
             <li><a href="#who">Clients</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
@@ -895,4 +890,246 @@
                 <h3>Full-Cycle Sales</h3>
                 <p>End-to-end sales management from initial contact through deal closure and beyond.</p>
                 <ul class="service-features">
-                    <li>
+                    <li>Discovery & needs analysis</li>
+                    <li>Proposal development</li>
+                    <li>Negotiation & closing</li>
+                    <li>Account management</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">📈</div>
+                <h3>Sales Strategy</h3>
+                <p>Strategic sales planning and optimization to maximize your revenue potential.</p>
+                <ul class="service-features">
+                    <li>Sales process design</li>
+                    <li>Market analysis & targeting</li>
+                    <li>Sales playbook creation</li>
+                    <li>Performance analytics</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🤝</div>
+                <h3>Business Development</h3>
+                <p>Strategic partnerships and new market opportunities to expand your reach.</p>
+                <ul class="service-features">
+                    <li>Partnership development</li>
+                    <li>Market expansion strategy</li>
+                    <li>Channel sales enablement</li>
+                    <li>Strategic relationships</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🔄</div>
+                <h3>Sales Training</h3>
+                <p>Elevate your internal team's skills with proven sales methodologies and coaching.</p>
+                <ul class="service-features">
+                    <li>One-on-one coaching</li>
+                    <li>Team workshops</li>
+                    <li>Skills assessment</li>
+                    <li>Ongoing support</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">⚡</div>
+                <h3>Fractional Leadership</h3>
+                <p>Experienced sales executives to lead your team without the full-time commitment.</p>
+                <ul class="service-features">
+                    <li>VP/Director level expertise</li>
+                    <li>Team building & management</li>
+                    <li>Sales operations setup</li>
+                    <li>Strategic planning</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="process" class="process">
+        <h2 class="section-title">How It Works</h2>
+        <p class="section-subtitle">Get started in days, not months. Our streamlined process gets you selling fast.</p>
+        <div class="process-steps">
+            <div class="process-step">
+                <div class="step-number">1</div>
+                <h3>Discovery Call</h3>
+                <p>We learn about your business, target market, and sales goals to create a customized strategy.</p>
+            </div>
+            <div class="process-step">
+                <div class="step-number">2</div>
+                <h3>Team Assembly</h3>
+                <p>We match you with experienced sales professionals who understand your industry and customers.</p>
+            </div>
+            <div class="process-step">
+                <div class="step-number">3</div>
+                <h3>Launch & Onboard</h3>
+                <p>Your dedicated sales team gets up to speed quickly with our proven onboarding process.</p>
+            </div>
+            <div class="process-step">
+                <div class="step-number">4</div>
+                <h3>Drive Results</h3>
+                <p>We execute your sales strategy, provide regular updates, and optimize for maximum performance.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="who" class="who-we-serve">
+        <h2 class="section-title">Who We Serve</h2>
+        <p class="section-subtitle">Flexible sales solutions designed for businesses and individuals at every stage</p>
+        <div class="client-types">
+            <div class="client-type">
+                <div class="client-icon">🏢</div>
+                <h3>Growing Businesses</h3>
+                <p>Scale your revenue without the overhead of building an in-house sales team.</p>
+                <ul class="benefits-list">
+                    <li>Startups needing traction</li>
+                    <li>SMBs ready to scale</li>
+                    <li>Companies entering new markets</li>
+                    <li>Businesses with seasonal needs</li>
+                </ul>
+            </div>
+            <div class="client-type">
+                <div class="client-icon">👤</div>
+                <h3>Entrepreneurs & Founders</h3>
+                <p>Focus on your product while we handle revenue generation and customer acquisition.</p>
+                <ul class="benefits-list">
+                    <li>Solo entrepreneurs</li>
+                    <li>Technical founders</li>
+                    <li>Consultants & coaches</li>
+                    <li>Service providers</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <h2>Ready to Accelerate?</h2>
+        <p>Join dozens of businesses and entrepreneurs who trust Gotham Solutions to drive their revenue growth.</p>
+        <a href="#contact" class="btn btn-primary" style="font-size: 1.1rem; padding: 1.2rem 3rem;">Schedule Free Consultation</a>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2 class="section-title">Get Started Today</h2>
+        <div class="contact-content">
+            <div class="contact-info">
+                <h3>Ready to Transform Your Sales?</h3>
+                <p>Schedule a free consultation to discuss your sales goals and how we can help you achieve them.</p>
+            </div>
+      <form action="https://formsubmit.co/paulramthun@gotham-solutions.com" method="POST">
+     <input type="hidden" name="_autoresponse" value="Thanks for reaching out to Gotham Outreach Solutions. We have received your message and someone from our team will be reviewing it shortly. One of our specialists will personally reach out to learn more about your business, your goals, and what prompted you to contact us. If this is urgent, you can call or text us at 224-353-0678. Gotham Outreach Solutions. We Turn Chaos Into Order, One Lead at a Time.">
+
+        <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+        
+          <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required>
+    </div>
+                 <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="company">Company Name</label>
+                    <input type="text" id="company" name="company" required>
+                </div>
+                <div class="form-group">
+                    <label for="service">Service Interested In</label>
+                    <select id="service" name="service" required>
+                        <option value="">Select a service...</option>
+                        <option value="outbound">Outbound Sales</option>
+                        <option value="full-cycle">Full-Cycle Sales</option>
+                        <option value="strategy">Sales Strategy</option>
+                        <option value="biz-dev">Business Development</option>
+                        <option value="training">Sales Training</option>
+                        <option value="leadership">Fractional Leadership</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Tell Us About Your Sales Goals</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Request Consultation</button>
+            </form>
+        </div>
+    </section>
+<!-- BOOK A CALL / CALENDLY SECTION -->
+<section id="book-a-call" class="book-call" style="padding:40px 20px; text-align:center;">
+  <h2 style="margin-bottom:10px;">Book a Discovery Call</h2>
+  <p style="margin-bottom:20px;">
+    Pick a time that works for you and we’ll walk through your pipeline, goals, 
+    and how Gotham Solutions can plug in as your on-demand sales team.
+  </p>
+
+  <div class="calendly-inline-widget"
+       data-url="https://calendly.com/paulramthun-gotham-solutions/30min"
+       style="min-width:320px; height:630px;">
+  </div>
+</section>
+
+<section id="leave-review" style="padding: 30px 20px; background:#0a0f1f; color:white; text-align:center;">
+  <h3 style="margin-bottom:10px;">Worked With Gotham Solutions?</h3>
+  <p style="margin-bottom:20px;">Share your experience and help other contractors find us.</p>
+
+  <a href="https://g.page/r/CVjvOr7W262HEBI/review"
+     target="_blank"
+     style="
+        display:inline-block;
+        padding:12px 24px;
+        border-radius:999px;
+        background:#00aaff;
+        color:#000;
+        font-weight:700;
+        text-decoration:none;
+        box-shadow:0 0 15px #00aaff;
+     ">
+    Leave a Google Review
+  </a>
+</section>
+
+</section>
+<section id="reviews" class="reviews-section">
+  <h2 class="section-title">What Our Clients Say</h2>
+
+  <div class="reviews-slider">
+
+    <div class="review-card">
+      <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <p class="review-text">
+        "Gotham Solutions helped us convert more roofing leads in one week than we did in the last month. Extremely professional and easy to work with."
+      </p>
+      <div class="review-name">- J. Martinez, Roofing Contractor</div>
+    </div>
+
+    <div class="review-card">
+      <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <p class="review-text">
+        "Fast communication, real appointments, and real results. Our HVAC team finally has a steady flow of qualified conversations."
+      </p>
+      <div class="review-name">- M. Turner, HVAC Owner</div>
+    </div>
+
+    <div class="review-card">
+      <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <p class="review-text">
+        "Our business saw an instant improvement in outbound reach and follow-up. Gotham Solutions feels like a plugged-in sales team, not just a vendor."
+      </p>
+      <div class="review-name">- R. Simmons, Remodeling Company</div>
+    </div>
+
+    <div class="review-card">
+      <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <p class="review-text">
+        "Professional, reliable, and effective. They understand contractor sales, homeowner objections, and how to keep our calendar full."
+      </p>
+      <div class="review-name">- K. Robinson, General Contractor</div>
+    </div>
+
+  </div>
+</section>
+
+</section>
+    
+<footer>
+    <p>&copy; 2024 Gotham Solutions. All rights reserved. | Sales as a Service</p>
+</footer>
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+</body>
+</html>
