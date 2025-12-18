@@ -633,12 +633,13 @@ gap: 1.5rem;
 .menu-toggle { display:none; }
 .success-message {
 display: none;
-background: rgba(0, 217, 255, 0.1);
+background: rgba(0, 217, 255, 0.15);
 border: 2px solid #00d9ff;
 border-radius: 15px;
-padding: 2rem;
+padding: 2.5rem;
 margin-bottom: 2rem;
 text-align: center;
+box-shadow: 0 10px 40px rgba(0, 217, 255, 0.3);
 }
 .success-message.show {
 display: block;
@@ -647,12 +648,18 @@ animation: fadeInUp 0.5s ease-out;
 .success-message h3 {
 color: #00d9ff;
 margin-bottom: 1rem;
-font-size: 1.8rem;
+font-size: 2rem;
+text-shadow: 0 0 20px rgba(0, 217, 255, 0.6);
 }
 .success-message p {
 color: #8ec5d9;
-font-size: 1.1rem;
+font-size: 1.15rem;
 line-height: 1.8;
+margin-bottom: 1rem;
+}
+.success-message .checkmark {
+font-size: 4rem;
+margin-bottom: 1rem;
 }
 @media (max-width: 768px) {
 .menu-toggle{
@@ -892,14 +899,27 @@ Deployment Time
 <section id="contact" class="contact">
 <h2 class="section-title">Get Started Today</h2>
 <div class="contact-content">
+<div id="successMessage" class="success-message">
+<div class="checkmark">✅</div>
+<h3>Message Received!</h3>
+<p><strong>Thanks for reaching out to Gotham Outreach Solutions.</strong></p>
+<p>Your message just came through, and we've got eyes on it.</p>
+<p>No automated runaround. No sales maze. Just a real conversation coming your way within the next 24 hours.</p>
+<p><strong>Here's what happens next:</strong></p>
+<p>✅ We review your information — Understanding your business, challenges, and sales goals<br>
+✅ We prepare intelligently — Research first, pitch never<br>
+✅ We connect directly — A real human (likely our founder) will reach out to schedule your discovery call</p>
+<p style="margin-top: 1.5rem; font-style: italic;">We operate like the Batcave, not a call center—precision over noise, strategy over scripts.</p>
+</div>
 
 <div class="contact-info">
 <h3>Ready to Transform Your Sales?</h3>
 <p>Schedule a free consultation to discuss your sales goals and how we can help you achieve them.</p>
 </div>
-<form action="https://formsubmit.co/paulramthun@gotham-solutions.com" method="POST">
+<form id="contactForm" action="https://formsubmit.co/paulramthun@gotham-solutions.com" method="POST">
 <!-- FormSubmit Configuration -->
 <input type="hidden" name="_subject" value="New Contact Form Submission - Gotham Outreach Solutions">
+<input type="hidden" name="_next" value="https://athena20256.github.io/gothamsolutions/index.html?success=true#contact">
 <input type="hidden" name="_template" value="box">
 <input type="hidden" name="_captcha" value="false">
 <input type="text" name="_honey" style="display: none;">
@@ -1022,7 +1042,21 @@ menu.classList.remove('open');
 });
 })();
 
-// No custom JS needed - FormSubmit handles everything
+// Check for success parameter on page load
+window.addEventListener('DOMContentLoaded', function() {
+const urlParams = new URLSearchParams(window.location.search);
+const successMessage = document.getElementById('successMessage');
+const contactForm = document.getElementById('contactForm');
+
+if (urlParams.get('success') === 'true' && successMessage && contactForm) {
+successMessage.classList.add('show');
+contactForm.style.display = 'none';
+// Scroll to success message
+setTimeout(function() {
+successMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+}, 100);
+}
+});
 </script>
 </body>
 </html>
