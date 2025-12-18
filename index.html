@@ -1,3 +1,6 @@
+index.html (Full Updated Code)
+Copy everything between the BEGIN and END markers into your index.html file.
+BEGIN INDEX.HTML
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -72,7 +75,7 @@
         }
 
         .logo span {
-            color: #ffffff;
+            color: #00d9ff;
         }
 
         nav ul {
@@ -92,7 +95,7 @@
         }
 
         nav a:hover {
-            color: #ffffff;
+            color: #00d9ff;
             text-shadow: 0 0 15px rgba(0, 217, 255, 0.8);
         }
 
@@ -222,7 +225,7 @@
         }
 
         .hero h1 .highlight {
-            color: #ffffff;
+            color: #00d9ff;
             text-shadow: 0 0 40px rgba(0, 217, 255, 0.8);
         }
 
@@ -350,58 +353,103 @@
             max-width: 1200px;
             margin: 0 auto;
         }
+      /* About Section */
+.about {
+    background: #0d1420;
+    padding: 80px 0;
+}
+
+.about-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.about h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #00d9ff;
+    margin-bottom: 3rem;
+    font-weight: 700;
+}
+
+.about p {
+    color: #8ec5d9;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.about p.intro {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #00d9ff;
+}
+
+.about p.emphasis {
+    font-weight: 600;
+    color: #00d9ff;
+}
+
+.about p.closing {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #00d9ff;
+    margin-top: 2rem;
+}
+
+.about p.short {
+    margin-bottom: 1rem;
+}
 
         /* About Section */
-        .about {
-            background: #0d1420;
-            padding: 80px 0;
-        }
+.about {
+    background: #0d1420;
+    padding: 80px 0;
+}
 
-        .about-content {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
+.about-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
 
-        .about h2 {
-            text-align: center;
-            font-size: 2.5rem;
-            color: #00d9ff;
-            margin-bottom: 3rem;
-            font-weight: 700;
-        }
+.about h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #00d9ff;
+    margin-bottom: 3rem;
+    font-weight: 700;
+}
 
-        .about p {
-            color: #8ec5d9;
-            font-size: 1.1rem;
-            line-height: 1.8;
-            margin-bottom: 1.5rem;
-        }
+.about p {
+    color: #8ec5d9;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
 
-        .about p.intro,
-        .about p.emphasis,
-        .about p.closing {
-            color: #00d9ff;
-        }
+.about p.intro {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #00d9ff;
+}
 
-        .about p.intro {
-            font-size: 1.3rem;
-            font-weight: 600;
-        }
+.about p.emphasis {
+    font-weight: 600;
+    color: #00d9ff;
+}
 
-        .about p.emphasis {
-            font-weight: 600;
-        }
+.about p.closing {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #00d9ff;
+    margin-top: 2rem;
+}
 
-        .about p.closing {
-            font-size: 1.25rem;
-            font-weight: 700;
-            margin-top: 2rem;
-        }
-
-        .about p.short {
-            margin-bottom: 1rem;
-        }
+.about p.short {
+    margin-bottom: 1rem;
+}
 
         .service-card {
             background: rgba(15, 25, 40, 0.6);
@@ -477,6 +525,11 @@
             font-size: 1.2rem;
             text-shadow: 0 0 10px rgba(0, 217, 255, 0.5);
         }
+
+
+/* ABOUT SECTION HTML MOVED TO BODY */
+
+
 
         .who-we-serve {
             background: #0d1420;
@@ -708,25 +761,55 @@
                 gap: 1.5rem;
             }
         }
+    
+/* Mobile slide-over menu */
+.menu-toggle { display:none; }
+@media (max-width: 768px) {
+  .menu-toggle{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    font-size:1.8rem;
+    background:transparent;
+    border:1px solid rgba(0,217,255,.3);
+    color:#00d9ff;
+    padding:.35rem .75rem;
+    border-radius:10px;
+    cursor:pointer;
+  }
+  nav ul{
+    position:fixed;
+    top:0;
+    right:-100%;
+    height:100vh;
+    width:78%;
+    max-width:320px;
+    background:rgba(10,15,26,.98);
+    backdrop-filter:blur(12px);
+    flex-direction:column;
+    gap:1.25rem;
+    padding:5.5rem 1.5rem 2rem;
+    transition:right .25s ease;
+    z-index:2000;
+    border-left:1px solid rgba(0,217,255,.2);
+  }
+  nav ul.open{ right:0; }
+}
+@media (min-width: 769px){
+  .menu-toggle{ display:none; }
+}
 
-        /* HARD OVERRIDE SO ABOUT MATCHES THEME EVEN IF DUPLICATE RULES EXIST */
-        .about { background: #0d1420 !important; }
-        .about h2 { color: #00d9ff !important; }
-        .about p { color: #8ec5d9 !important; }
-        .about p.intro,
-        .about p.emphasis,
-        .about p.closing { color: #00d9ff !important; }
-
-    </style>
+</style>
 </head>
 <body>
     <nav>
         <div class="logo">Gotham<span>Solutions</span></div>
+        <button class="menu-toggle" aria-label="Open menu">☰</button>
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#process">Process</a></li>
+          <li><a href="#process">Process</a></li>
             <li><a href="#who">Clients</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
@@ -837,78 +920,57 @@
         </div>
     </section>
 
-    <!-- About Section (FIXED + THEME MATCH) -->
-    <section id="about" class="about">
-        <div class="about-content">
-            <h2>About Us</h2>
-            
-            <p class="intro">
-                Gotham Outreach Solutions wasn't built in daylight.
-            </p>
-            
-            <p>
-                It came together after years inside sales floors, CRM trenches, and contractor 
-                boardrooms, watching the same thing happen over and over. Solid companies doing 
-                real work were getting ignored, while louder, sloppier players kept landing 
-                conversations they didn't deserve. Not because they were better. Because they 
-                were noisier.
-            </p>
-            
-            <p class="short">
-                That never sat right.
-            </p>
-            
-            <p>
-                I've spent years in business development, outreach, and appointment setting for 
-                construction and commercial service companies. Long enough to recognize that most 
-                outreach fails for one simple reason: it treats decision-makers like targets 
-                instead of people. It kicks down the front door, shouts a pitch, and wonders why 
-                no one answers.
-            </p>
-            
-            <p class="emphasis">
-                Gotham was built to work differently.
-            </p>
-            
-            <p>
-                We operate more like the Batcave than a call center. Quiet research first. 
-                Intelligence before movement. Understanding the city before driving through it 
-                at speed. We learn who actually runs the operation, how decisions are made, and 
-                where conversations make sense. Then, and only then, do we engage.
-            </p>
-            
-            <p>
-                No scripts. No gimmicks. No fake urgency. No "quick question" emails that lead 
-                nowhere.
-            </p>
-            
-            <p>
-                Gotham Outreach functions as a founder-level partner, not a vendor. When there's 
-                a real fit, we approach it deliberately and professionally. When there isn't, we 
-                don't force it. We're not here to chase every signal in the sky. Only the ones 
-                worth answering.
-            </p>
-            
-            <p>
-                This company exists because too many outreach firms confuse motion with progress. 
-                Gotham prefers precision. Call it operating after hours, when the city's quieter 
-                and the noise dies down. The Batmobile's ready if needed, but most nights it's 
-                about planning the route, not flooring it.
-            </p>
-            
-            <p class="short">
-                No masks required. No cape mandatory.
-            </p>
-            
-            <p class="short">
-                Just preparation, intent, and conversations that actually move the needle.
-            </p>
-            
-            <p class="closing">
-                That's Gotham Outreach Solutions
-            </p>
-        </div>
-    </section>
+
+<section id="about" class="about">
+  <div class="about-content">
+    <h2>About Us</h2>
+
+    <p class="intro">Gotham Outreach Solutions wasn't built in daylight.</p>
+
+    <p>It came together after years inside sales floors, CRM trenches, and contractor 
+            boardrooms, watching the same thing happen over and over. Solid companies doing 
+            real work were getting ignored, while louder, sloppier players kept landing 
+            conversations they didn't deserve. Not because they were better. Because they 
+            were noisier.</p>
+
+    <p class="short">That never sat right.</p>
+
+    <p>I've spent years in business development, outreach, and appointment setting for 
+            construction and commercial service companies. Long enough to recognize that most 
+            outreach fails for one simple reason: it treats decision-makers like targets 
+            instead of people. It kicks down the front door, shouts a pitch, and wonders why 
+            no one answers.</p>
+
+    <p class="emphasis">Gotham was built to work differently.</p>
+
+    <p>We operate more like the Batcave than a call center. Quiet research first. 
+            Intelligence before movement. Understanding the city before driving through it 
+            at speed. We learn who actually runs the operation, how decisions are made, and 
+            where conversations make sense. Then, and only then, do we engage.</p>
+
+    <p>No scripts. No gimmicks. No fake urgency. No "quick question" emails that lead 
+            nowhere.</p>
+
+    <p>Gotham Outreach functions as a founder-level partner, not a vendor. When there's 
+            a real fit, we approach it deliberately and professionally. When there isn't, we 
+            don't force it. We're not here to chase every signal in the sky. Only the ones 
+            worth answering.</p>
+
+    <p>This company exists because too many outreach firms confuse motion with progress. 
+            Gotham prefers precision. Call it operating after hours, when the city's quieter 
+            and the noise dies down. The Batmobile's ready if needed, but most nights it's 
+            about planning the route, not flooring it.</p>
+
+    <p class="short">No masks required. No cape mandatory.</p>
+
+    <p class="short">Just preparation, intent, and conversations that actually move the needle.</p>
+
+    <p class="closing">That's Gotham Outreach Solutions</p>
+  </div>
+</section>
+
+
+
 
     <section id="process" class="process">
         <h2 class="section-title">How It Works</h2>
@@ -1017,7 +1079,6 @@
             </form>
         </div>
     </section>
-
 <!-- BOOK A CALL / CALENDLY SECTION -->
 <section id="book-a-call" class="book-call" style="padding:40px 20px; text-align:center;">
   <h2 style="margin-bottom:10px;">Book a Discovery Call</h2>
@@ -1052,6 +1113,7 @@
   </a>
 </section>
 
+</section>
 <section id="reviews" class="reviews-section">
   <h2 class="section-title">What Our Clients Say</h2>
 
@@ -1092,9 +1154,35 @@
   </div>
 </section>
 
+</section>
+    
 <footer>
     <p>&copy; 2024 Gotham Solutions. All rights reserved. | Sales as a Service</p>
 </footer>
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+
+<script>
+(function(){
+  var btn = document.querySelector('.menu-toggle');
+  var menu = document.querySelector('nav ul');
+  if(!btn || !menu) return;
+
+  btn.addEventListener('click', function(){
+    menu.classList.toggle('open');
+  });
+
+  Array.prototype.forEach.call(menu.querySelectorAll('a'), function(a){
+    a.addEventListener('click', function(){
+      menu.classList.remove('open');
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
+END INDEX.HTML
+
 <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
 </body>
 </html>
