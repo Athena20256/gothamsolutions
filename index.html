@@ -49,21 +49,25 @@ top: 0;
 width: 100%;
 background: rgba(10, 15, 26, 0.95);
 backdrop-filter: blur(10px);
-padding: 1rem 5%;
+padding: 1.5rem 5%;
 display: flex;
-justify-content: space-between;
+justify-content: center;
 align-items: center;
 z-index: 1000;
 box-shadow: 0 2px 20px rgba(0, 217, 255, 0.3);
 border-bottom: 1px solid rgba(0, 217, 255, 0.2);
+flex-wrap: wrap;
 }
 .logo {
-font-size: 1.8rem;
-font-weight: 700;
+font-size: 2.8rem;
+font-weight: 900;
 color: #00d9ff;
-letter-spacing: 2px;
+letter-spacing: 4px;
 text-shadow: 0 0 20px rgba(0, 217, 255, 0.8), 0 0 40px rgba(0, 217, 255, 0.4);
 text-transform: uppercase;
+width: 100%;
+text-align: center;
+flex: 1;
 }
 .logo span {
 color: #00d9ff;
@@ -72,6 +76,9 @@ nav ul {
 display: flex;
 list-style: none;
 gap: 2rem;
+width: 100%;
+justify-content: center;
+margin-top: 1rem;
 }
 nav a {
 text-decoration: none;
@@ -594,6 +601,10 @@ font-size: 0.9rem;
 letter-spacing: 1px;
 }
 @media (max-width: 768px) {
+.logo {
+font-size: 1.8rem;
+letter-spacing: 2px;
+}
 nav ul {
 gap: 1rem;
 font-size: 0.8rem;
@@ -653,7 +664,7 @@ nav ul.open{ right:0; }
 </head>
 <body>
 <nav>
-<div class="logo">Gotham<span>Outreach Solutions</span></div>
+<div class="logo">GOTHAM OUTREACH SOLUTIONS</div>
 <button class="menu-toggle" aria-label="Open menu">☰</button>
 <ul>
 <li><a href="#home">Home</a></li>
@@ -1000,6 +1011,9 @@ menu.classList.remove('open');
 });
 });
 })();
+</script>
+</body>
+</html>
 </script>
 </body>
 </html>
